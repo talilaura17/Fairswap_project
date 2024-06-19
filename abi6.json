@@ -1,0 +1,102 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "s_ij",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[2]",
+				"name": "k_ij",
+				"type": "uint256[2]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "j",
+				"type": "uint256"
+			}
+		],
+		"name": "encryptShare",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "example",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "sij",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[2]",
+				"name": "kij",
+				"type": "uint256[2]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "s_bar",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "s_recovered",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "x",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "j",
+				"type": "uint256"
+			}
+		],
+		"name": "keccak256Hash",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "sk",
+				"type": "uint256"
+			}
+		],
+		"name": "multiplyG1",
+		"outputs": [
+			{
+				"internalType": "uint256[2]",
+				"name": "",
+				"type": "uint256[2]"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	}
+]
