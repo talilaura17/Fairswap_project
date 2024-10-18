@@ -1,251 +1,35 @@
 [
 	{
-		"constant": false,
+		"constant": true,
 		"inputs": [],
-		"name": "accept",
-		"outputs": [],
-		"payable": true,
-		"stateMutability": "payable",
+		"name": "new_output",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
-		"constant": false,
+		"constant": true,
 		"inputs": [
 			{
-				"name": "datahash",
-				"type": "bytes32"
-			},
-			{
-				"name": "index",
-				"type": "uint256"
-			},
-			{
-				"name": "root",
-				"type": "bytes32"
-			},
-			{
-				"name": "proof",
+				"name": "input",
 				"type": "bytes32[]"
-			}
-		],
-		"name": "complain",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_indexOut",
-				"type": "uint256"
 			},
 			{
-				"name": "_indexIn",
-				"type": "uint256"
-			},
-			{
-				"name": "_Zout",
-				"type": "bytes32"
-			},
-			{
-				"name": "_Zin1",
-				"type": "bytes32[2]"
-			},
-			{
-				"name": "_Zin2",
-				"type": "bytes32[2]"
-			},
-			{
-				"name": "_proofZout",
-				"type": "bytes32[14]"
-			},
-			{
-				"name": "_proofZin",
-				"type": "bytes32[14]"
-			}
-		],
-		"name": "complainAboutLeaf",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_indexOut",
-				"type": "uint256"
-			},
-			{
-				"name": "_indexIn",
-				"type": "uint256"
-			},
-			{
-				"name": "_Zout",
-				"type": "bytes32"
-			},
-			{
-				"name": "_Zin1",
-				"type": "bytes32"
-			},
-			{
-				"name": "_Zin2",
-				"type": "bytes32"
-			},
-			{
-				"name": "_proofZout",
-				"type": "bytes32[14]"
-			},
-			{
-				"name": "_proofZin",
-				"type": "bytes32[14]"
-			}
-		],
-		"name": "complainAboutNode",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_Zm",
-				"type": "bytes32"
-			},
-			{
-				"name": "_proofZm",
-				"type": "bytes32[14]"
-			}
-		],
-		"name": "complainAboutRoot",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_receiver",
-				"type": "address"
-			},
-			{
-				"name": "_price",
-				"type": "uint256"
-			},
-			{
-				"name": "_ciphertextRoot",
-				"type": "bytes32"
-			},
-			{
-				"name": "_fileRoot",
+				"name": "output",
 				"type": "bytes32"
 			}
 		],
-		"name": "ininitialize",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
-		"name": "noComplain",
-		"outputs": [],
-		"payable": true,
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
-		"name": "refund",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_key",
-				"type": "bytes32"
-			}
-		],
-		"name": "revealKey",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"payable": true,
-		"stateMutability": "payable",
-		"type": "constructor"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "ciphertextRoot",
+		"name": "verifyChild",
 		"outputs": [
 			{
 				"name": "",
-				"type": "bytes32"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "_index",
-				"type": "uint256"
-			},
-			{
-				"name": "_ciphertext",
-				"type": "bytes32[2]"
-			}
-		],
-		"name": "cryptLarge",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bytes32[2]"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "_index",
-				"type": "uint256"
-			},
-			{
-				"name": "_ciphertext",
-				"type": "bytes32"
-			}
-		],
-		"name": "cryptSmall",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bytes32"
+				"type": "bool"
 			}
 		],
 		"payable": false,
@@ -255,11 +39,11 @@
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "fileRoot",
+		"name": "getTimeout",
 		"outputs": [
 			{
 				"name": "",
-				"type": "bytes32"
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -281,13 +65,22 @@
 		"type": "function"
 	},
 	{
+		"constant": false,
+		"inputs": [],
+		"name": "refund",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
 		"constant": true,
 		"inputs": [],
-		"name": "phase",
+		"name": "ciphertextRoot",
 		"outputs": [
 			{
 				"name": "",
-				"type": "uint8"
+				"type": "bytes32"
 			}
 		],
 		"payable": false,
@@ -295,13 +88,35 @@
 		"type": "function"
 	},
 	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "data1",
+				"type": "bytes32"
+			},
+			{
+				"name": "data2",
+				"type": "bytes32"
+			},
+			{
+				"name": "data3",
+				"type": "bytes32"
+			}
+		],
+		"name": "receiveData",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
 		"constant": true,
 		"inputs": [],
-		"name": "price",
+		"name": "ciphertextRoot_r",
 		"outputs": [
 			{
 				"name": "",
-				"type": "uint256"
+				"type": "bytes32"
 			}
 		],
 		"payable": false,
@@ -324,6 +139,111 @@
 	},
 	{
 		"constant": true,
+		"inputs": [],
+		"name": "getKey",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_receiver",
+				"type": "address"
+			},
+			{
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"name": "_ciphertextRoot",
+				"type": "bytes32"
+			}
+		],
+		"name": "ininitialize",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getComplainResult",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "price",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "input1",
+				"type": "bytes32"
+			},
+			{
+				"name": "input2",
+				"type": "bytes32"
+			},
+			{
+				"name": "output",
+				"type": "bytes32"
+			}
+		],
+		"name": "verifyChild_request_ver",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "phase",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
 		"inputs": [
 			{
 				"name": "datahash",
@@ -342,7 +262,7 @@
 				"type": "bytes32[]"
 			}
 		],
-		"name": "verify",
+		"name": "verifyRoot",
 		"outputs": [
 			{
 				"name": "",
@@ -354,30 +274,324 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
 			{
-				"name": "_index",
+				"name": "index",
 				"type": "uint256"
 			},
 			{
-				"name": "_value",
+				"name": "root",
 				"type": "bytes32"
 			},
 			{
-				"name": "_proof",
-				"type": "bytes32[14]"
+				"name": "proof",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "input1",
+				"type": "string"
+			},
+			{
+				"name": "input2",
+				"type": "string"
+			},
+			{
+				"name": "output",
+				"type": "string"
 			}
 		],
-		"name": "vrfy",
+		"name": "complain_request_ver",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "noComplain",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "complainResult",
 		"outputs": [
 			{
 				"name": "",
-				"type": "bool"
+				"type": "uint256"
 			}
 		],
 		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getNow",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "input1",
+				"type": "string"
+			},
+			{
+				"name": "input2",
+				"type": "string"
+			},
+			{
+				"name": "output",
+				"type": "string"
+			}
+		],
+		"name": "requestData",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getNewOutput",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "new_input1",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_key",
+				"type": "bytes32"
+			}
+		],
+		"name": "revealKey",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "new_input2",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_ciphertextRoot_receiver",
+				"type": "bytes32"
+			}
+		],
+		"name": "accept",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getCiphertextRoot_r",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "indexIn",
+				"type": "uint256"
+			},
+			{
+				"name": "indexOut",
+				"type": "uint256"
+			},
+			{
+				"name": "root",
+				"type": "bytes32"
+			},
+			{
+				"name": "proofZin",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "proofZout",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "input",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "output",
+				"type": "bytes32"
+			},
+			{
+				"name": "inputZH",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "outputZH",
+				"type": "bytes32"
+			}
+		],
+		"name": "complain",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "refund_for_test",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "message",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "caller",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "input1",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "input2",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "output",
+				"type": "string"
+			}
+		],
+		"name": "RequestData",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "message",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "bb",
+				"type": "bytes32"
+			}
+		],
+		"name": "Debug",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "message",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "data",
+				"type": "bytes32"
+			}
+		],
+		"name": "ForSender",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "message",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "data",
+				"type": "bytes32"
+			}
+		],
+		"name": "ForReceiver",
+		"type": "event"
 	}
 ]
